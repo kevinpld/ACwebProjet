@@ -1,0 +1,109 @@
+/* Feuille de style - Site Web - americas_cup */
+
+body   /* Style à appliquer sur l'ensemble du document */
+{
+  background-color: #72B6E2 ;  /* Couleur de fond : bleu */
+  margin-right: 2%;           /* Gestion des marges latérales */
+  margin-left: 2%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+header
+{
+  margin-bottom: 2%;
+}
+h1    /* Style à appliquer sur les titres h1 */
+{
+  text-align: center;
+  color: #0A6FB0;
+  letter-spacing: 0.5em;
+}
+h2     /* Style à appliquer sur les sous-titres h2 */
+{
+  text-decoration: underline;
+}
+p em  /* Mise en évidence */
+{
+  font-weight: bold;
+  color: #0A6FB0;
+}
+p      /* Style à appliquer sur les paragraphes */
+{
+  text-indent: 3%;
+}
+p:first-letter   /* Mise en évidence 1ère lettre chaque paragraphe */
+{
+  font-size: 150%;
+  color: #0A6FB0;
+}
+ul     /* Style à appliquer sur les listes */
+{ 
+  list-style-type: square;      
+  margin-left: 5%;               /* Marge interne gauche = 5% */
+  margin-right: 2%;
+}
+
+footer
+{
+  padding-top: 1%;
+  clear: both;
+}
+
+#origine    /* Style à appliquer sur la sous-partie de classe "origine" */
+{
+  margin-top: 2%;
+  font-style: italic;
+}
+#categorie  /* Style à appliquer sur la sous-partie de classe "categorie" */
+{
+  margin-top: 2%;
+  background-color: #4D9ED3;   /* Couleur de fond  */
+  border-style: solid;
+  border-width: medium;        /* Bordure de couleur sur les quatre côtés */
+  border-color: #2D87C2;
+  padding: 1%;
+  color: white 				   /* texte en blanc */
+} 
+/* Gestion des hyperliens */
+a:link
+{
+  color: #31007B;
+}
+a:visited
+{
+  color: #8C007B;
+}
+a:hover
+{
+  color: white;
+  background: blue;
+}
+a:active
+{
+  color: black;
+}
+
+/* min-width pour grandes résolutions */
+@media screen and (min-width: 1152px) 
+{
+  aside
+  {
+    padding-top: 2%;    
+    width: 20%;
+    float: right;
+    text-align: right;
+  }
+  section.texte
+  {
+	padding-top: 2%;  
+    width: 77%;
+    float: left;
+  }
+}
+/* max-width pour faibles résolutions */
+@media screen and (max-width: 800px) 
+{
+  aside
+   {
+    display: none;
+  }
+}
